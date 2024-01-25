@@ -12,21 +12,21 @@ function Header(props) {
           {props.brand}
         </Navbar.Brand>
         <Nav.Link className="me-4 ms-4" href="#home">
-          Home
+          {props.items}
         </Nav.Link>
         <Nav.Link className="me-4" href="#link">
-          Link
+          {props.reservation}
         </Nav.Link>
-        <NavDropdown className="me-4" title="Dropdown" id="basic-nav-dropdown">
+        <NavDropdown className="me-4" title={props.contacts} id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
         </NavDropdown>
-          <Nav.Link className="ms-auto me-4" href="#link">
-            Prisijungti
-          </Nav.Link>
+        <Nav.Link className="ms-auto me-4" href="#link">
+          Prisijungti
+        </Nav.Link>
       </Navbar>
     </div>
   );
