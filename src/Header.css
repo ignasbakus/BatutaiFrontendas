@@ -1,0 +1,10 @@
+body,
+body * {
+  margin: 0;
+  float: left;
+}
+
+
+#headerRight{
+    float: right;
+}
