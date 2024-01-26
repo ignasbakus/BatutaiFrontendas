@@ -1,10 +1,7 @@
-body,
-body * {
-  margin: 0;
-  float: left;
+div:not([className = brandName]) {
+  font-size: 13px;
 }
 
-
-#headerRight{
-    float: right;
+.dropdown-toggle::after {
+  display: none; 
 }
