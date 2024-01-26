@@ -1,11 +1,12 @@
 import React from "react";
-import "./Header.css";
+import "./NavBar.css"
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from 'react-router-dom';
 import { useState, useRef, useEffect } from "react";
 
-function Header(props) {
+function NavBar(props) {
   const [show, setShow] = useState(false);
   const dropdownRef = useRef(null);
   let timeout;
@@ -50,18 +51,21 @@ function Header(props) {
             {props.dropdownValue3}
           </NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link className="me-4" href="#home">
+        <Link className="me-4" href="#h">
           {props.reservation}
-        </Nav.Link>
-        <Nav.Link className="me-4" href="#link">
+        </Link>
+        <Link className="me-4" >
+          {props.home}
+        </Link>
+        <Link className="me-4" to="/Contact">
           {props.contacts}
-        </Nav.Link>
-        <Nav.Link className="ms-auto me-4" href="#link">
+        </Link>
+        <Link className="ms-auto me-4" href="#link">
           Prisijungti
-        </Nav.Link>
+        </Link>
       </Navbar>
     </div>
   );
 }
 
-export default Header;
+export default NavBar;
