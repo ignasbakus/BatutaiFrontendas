@@ -18,12 +18,13 @@ function Header(props) {
   const hideDropdown = () => {
     timeout = setTimeout(() => {
       setShow(false);
-    }, 150);
+    }, 100);
   };
 
   useEffect(() => {
     return () => clearTimeout(timeout);
   }, []);
+
   return (
     <div>
       <Navbar fixed="top" expand="md" className="bg-body-tertiary">
@@ -39,11 +40,15 @@ function Header(props) {
           onMouseLeave={hideDropdown}
           ref={dropdownRef}
         >
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">
+            {props.dropdownValue1}
+          </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">
+            {props.dropdownValue2}
+          </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">
+            {props.dropdownValue3}
+          </NavDropdown.Item>
         </NavDropdown>
         <Nav.Link className="me-4" href="#home">
           {props.reservation}
