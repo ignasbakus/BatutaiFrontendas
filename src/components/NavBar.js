@@ -1,9 +1,9 @@
 import React from "react";
-import "./NavBar.css"
+import "../Styles/NavBar.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 
 function NavBar(props) {
@@ -29,7 +29,7 @@ function NavBar(props) {
   return (
     <div>
       <Navbar fixed="top" expand="md" className="bg-body-tertiary">
-        <Navbar.Brand className="ms-4 brandName" href="#home">
+        <Navbar.Brand className="ms-4 brandName" href="/">
           {props.brand}
         </Navbar.Brand>
         <NavDropdown
@@ -51,17 +51,15 @@ function NavBar(props) {
             {props.dropdownValue3}
           </NavDropdown.Item>
         </NavDropdown>
-        <Link className="me-4" href="#h">
+        <Link className="me-4" to="#h">
           {props.reservation}
         </Link>
-        <Link className="me-4" >
-          {props.home}
-        </Link>
-        <Link className="me-4" to="/Contact">
+        <Link className="me-4" to="/">{props.home}</Link>
+        <Link className="me-4" to="/contact">
           {props.contacts}
         </Link>
-        <Link className="ms-auto me-4" href="#link">
-          Prisijungti
+        <Link className="ms-auto me-4" to="#link">
+          {props.login}
         </Link>
       </Navbar>
     </div>

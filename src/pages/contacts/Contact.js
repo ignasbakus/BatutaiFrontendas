@@ -1,11 +1,7 @@
 import React from "react";
 
 function Contact(props) {
-  return (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  );
+  return <h1  style={{marginTop: "60px", textAlign: "center"}}>Contacts</h1>
 }
 
 export default Contact;
