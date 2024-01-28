@@ -59,20 +59,20 @@ function NavigationBar(props) {
                   {props.dropdownValue3}
                 </NavDropdown.Item>
               </NavDropdown>
-              <Link className="me-4 navBarLinks" to="/reservation">
+              <Nav.Link as={Link} className="me-4 navBarLinks" to="/reservation">
                 {props.reservation}
-              </Link>
-              <Link className="me-4 navBarLinks" to="/">
+              </Nav.Link>
+              <Nav.Link as={Link} className="me-4 navBarLinks" to="/">
                 {props.home}
-              </Link>
-              <Link className="me-4 navBarLinks" to="/contact">
+              </Nav.Link>
+              <Nav.Link as={Link} className="me-4 navBarLinks" to="/contact">
                 {props.contacts}
-              </Link>
+              </Nav.Link>
             </Nav>
             <Nav>
-              <Link className="me-4 navBarLinks" to="/login">
+              <Nav.Link as={Link} className="me-4 navBarLinks" to="/login">
                 {props.login}
-              </Link>
+              </Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
