@@ -10,3 +10,12 @@ div:not([className = brandName]) {
   text-decoration: none;
   color: black;
 }
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Vertically center align items */
+}
+
+#basic-nav-dropdown{
+  color: black;
+}
