@@ -5,3 +5,8 @@ div:not([className = brandName]) {
 .dropdown-toggle::after {
   display: none; 
 }
+
+.navBarLinks{
+  text-decoration: none;
+  color: black;
+}

@@ -1,13 +1,15 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Contact from "./pages/contacts/Contact";
+import NavigationBar from "./components/NavigationBar";
+import Contact from "./pages/Contact";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./pages/homepage/HomePage";
+import HomePage from "./pages/HomePage";
+import Reservation from "./pages/Reservation";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <>
-      <NavBar
+      <NavigationBar
         brand="Batutų nuoma"
         reservation="Rezervacija"
         items="Batutai"
@@ -22,6 +24,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/reservation" element={<Reservation />} />
+          <Route path="/login" element={<Login />} />
+
         </Routes>
       </div>
     </>
