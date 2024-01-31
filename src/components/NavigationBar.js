@@ -59,18 +59,18 @@ function NavigationBar(props) {
                   {props.dropdownValue3}
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} className="me-4 navBarLinks" to="/reservation">
+              <Nav.Link eventKey="1" as={Link} className="me-4 navBarLinks" to="/reservation">
                 {props.reservation}
               </Nav.Link>
-              <Nav.Link as={Link} className="me-4 navBarLinks" to="/">
+              <Nav.Link eventKey="2" as={Link} className="me-4 navBarLinks" to="/">
                 {props.home}
               </Nav.Link>
-              <Nav.Link as={Link} className="me-4 navBarLinks" to="/contact">
+              <Nav.Link eventKey="3" as={Link} className="me-4 navBarLinks" to="/contact">
                 {props.contacts}
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link as={Link} className="me-4 navBarLinks" to="/login">
+              <Nav.Link eventKey="4" as={Link} className="me-4 navBarLinks" to="/login">
                 {props.login}
               </Nav.Link>
             </Nav>
@@ -82,3 +82,6 @@ function NavigationBar(props) {
 }
 
 export default NavigationBar;
+
+
+// Issiaiskint kaip uzdaryt navbara kai paspaudi linka
