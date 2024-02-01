@@ -26,7 +26,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/reservation" element={<Reservation />} />
           <Route path="/login" element={<Login />} />
-
         </Routes>
       </div>
     </>

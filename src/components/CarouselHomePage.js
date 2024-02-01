@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import "../Styles/CarouselHomePage.css";
 
-function CarouselHomePage() {
+function CarouselHomePage(props) {
   return (
     <>
       <Carousel data-bs-theme="dark">

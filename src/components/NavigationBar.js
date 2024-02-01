@@ -82,6 +82,3 @@ function NavigationBar(props) {
 }
 
 export default NavigationBar;
-
-
-// Issiaiskint kaip uzdaryt navbara kai paspaudi linka
