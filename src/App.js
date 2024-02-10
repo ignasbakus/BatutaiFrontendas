@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Reservation from "./pages/Reservation";
 import Login from "./pages/Login";
+import Footer from "./components/Footer";
 
 function App() {
   return (

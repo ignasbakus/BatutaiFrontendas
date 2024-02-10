@@ -4,6 +4,7 @@ import ItemList from '../components/ItemList';
 import ComponentTitle from '../components/ComponentTitle';
 import ComponentButton from '../components/ComponentButton';
 import React from 'react';
+import FeaturesHomePage from '../components/FeaturesHomePage';
 
 const HomePage = () => {
   return (
@@ -12,6 +13,8 @@ const HomePage = () => {
       <ComponentTitle title="Populiariausi batutai"/>
       <ItemList />
       <ComponentButton title="Rezervuoti"/>
+      <ComponentTitle title="Kodėl verta rinktis mus?"/>
+      <FeaturesHomePage />
     </div>
   )
 }
