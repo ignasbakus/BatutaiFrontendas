@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import ReservationForm from "../components/ReservationForm";
 
 const Reservation = () => {
-  return <h1 style={{marginTop: "60px", textAlign: "center"}}>Rezervacija</h1>
-}
+  return (
+    <>
+      <ReservationForm />
+    </>
+  );
+};
 
 export default Reservation;

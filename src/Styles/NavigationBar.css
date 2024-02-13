@@ -1,12 +1,12 @@
-div:not([className = brandName]) {
+div:not([className="brandName"]) {
   font-size: 13px;
 }
 
 .dropdown-toggle::after {
-  display: none; 
+  display: none;
 }
 
-.navBarLinks{
+.navBarLinks {
   text-decoration: none;
   color: black;
 }
@@ -16,6 +16,14 @@ div:not([className = brandName]) {
   align-items: center; /* Vertically center align items */
 }
 
-#basic-nav-dropdown{
+#basic-nav-dropdown {
   color: black;
+}
+
+.navBarMarginLeft {
+  margin-left: 2rem;
+}
+
+.navBarMarginRight {
+  margin-right: 2rem;
 }

@@ -30,7 +30,7 @@ function NavigationBar(props) {
   return (
     <>
       <Navbar collapseOnSelect expand="md" className="bg-body-tertiary">
-        <Navbar.Brand className="ms-4 brandName" href="/">
+        <Navbar.Brand className="brandName navBarMarginLeft" href="/">
           {props.brand}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -59,18 +59,38 @@ function NavigationBar(props) {
                   {props.dropdownValue3}
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link eventKey="1" as={Link} className="me-4 navBarLinks" to="/reservation">
+              <Nav.Link
+                eventKey="1"
+                as={Link}
+                className="me-4 navBarLinks"
+                to="/reservation"
+              >
                 {props.reservation}
               </Nav.Link>
-              <Nav.Link eventKey="2" as={Link} className="me-4 navBarLinks" to="/">
+              <Nav.Link
+                eventKey="2"
+                as={Link}
+                className="me-4 navBarLinks"
+                to="/"
+              >
                 {props.home}
               </Nav.Link>
-              <Nav.Link eventKey="3" as={Link} className="me-4 navBarLinks" to="/contact">
+              <Nav.Link
+                eventKey="3"
+                as={Link}
+                className="me-4 navBarLinks"
+                to="/contact"
+              >
                 {props.contacts}
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link eventKey="4" as={Link} className="me-4 navBarLinks" to="/login">
+              <Nav.Link
+                eventKey="4"
+                as={Link}
+                className="navBarLinks navBarMarginRight"
+                to="/login"
+              >
                 {props.login}
               </Nav.Link>
             </Nav>
