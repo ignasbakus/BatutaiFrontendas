@@ -1,32 +1,34 @@
 import React from "react";
-import { Form, Row, Col, InputGroup } from "react-bootstrap";
+import "../Styles/ReservationForm.css";
+import { Form, Row, Col, InputGroup, Button } from "react-bootstrap";
 
 function ReservationForm(props) {
   return (
-    <Form>
-      <Row>
-        <Col>
-          <Form.Group controlId="formBasicName">
+    <Form className="mt-5">
+      <h1 className="text-center">Rezervacija</h1>
+      <Row className="justify-content-center">
+        <Col xs={12} md={3}>
+          <Form.Group className="mt-3" controlId="formBasicName">
             <Form.Label>Vardas</Form.Label>
             <Form.Control type="text" placeholder="Vardas" />
           </Form.Group>
         </Col>
-        <Col>
-          <Form.Group controlId="formBasicLastName">
+        <Col xs={12} md={3}>
+          <Form.Group className="mt-3" controlId="formBasicLastName">
             <Form.Label>Pavardė</Form.Label>
             <Form.Control type="text" placeholder="Pavardė" />
           </Form.Group>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Form.Group controlId="formBasicLastName">
+      <Row className="justify-content-center">
+        <Col xs={12} md={3}>
+          <Form.Group className="mt-3" controlId="formBasicLastName">
             <Form.Label>Adresas</Form.Label>
             <Form.Control type="text" placeholder="Adresas" />
           </Form.Group>
         </Col>
-        <Col>
-          <Form.Group>
+        <Col xs={12} md={3}>
+          <Form.Group className="mt-3">
             <Form.Label>Miestas</Form.Label>
             <Form.Select aria-label="Default select example">
               <option value="1">Kaunas</option>
@@ -36,15 +38,34 @@ function ReservationForm(props) {
           </Form.Group>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Form.Group controlId="formBasicPhoneNumber">
+      <Row className="justify-content-center">
+        <Col xs={12} md={6}>
+          <Form.Group className="mt-3" controlId="formBasicPhoneNumber">
             <Form.Label>Tel. Numeris</Form.Label>
             <InputGroup>
               <InputGroup.Text id="basic-addon3">+370</InputGroup.Text>
-              <Form.Control type="number" placeholder="Tel. Numeris" />
+              <Form.Control
+                id="inputNumber"
+                type="number"
+                placeholder="Tel. Numeris"
+              />
             </InputGroup>
           </Form.Group>
+        </Col>
+      </Row>
+      <Row className="justify-content-center">
+        <Col xs={12} md={6}>
+          <Form.Group className="mt-3" controlId="formBasicEmail">
+            <Form.Label>Elektroninis paštas</Form.Label>
+            <Form.Control type="email" placeholder="Elektroninis paštas" />
+          </Form.Group>
+        </Col>
+      </Row>
+      <Row className="justify-content-center">
+        <Col xs={12} md={6}>
+          <Button className="mt-3" variant="primary" type="submit">
+            Rezervuoti
+          </Button>
         </Col>
       </Row>
     </Form>
