@@ -8,7 +8,7 @@ import FeaturesHomePage from '../components/FeaturesHomePage';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='Container'>
       <Carousel />
       <ComponentTitle title="Populiariausi batutai"/>
       <ItemList />

@@ -49,7 +49,7 @@ function NavigationBar(props) {
                 onMouseLeave={hideDropdown}
                 ref={dropdownRef}
               >
-                <NavDropdown.Item href="#action/3.1">
+                <NavDropdown.Item eventKey="1" as={Link} to="/items">
                   {props.dropdownValue1}
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -60,7 +60,7 @@ function NavigationBar(props) {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link
-                eventKey="1"
+                eventKey="2"
                 as={Link}
                 className="me-4 navBarLinks"
                 to="/reservation"
@@ -68,7 +68,7 @@ function NavigationBar(props) {
                 {props.reservation}
               </Nav.Link>
               <Nav.Link
-                eventKey="2"
+                eventKey="3"
                 as={Link}
                 className="me-4 navBarLinks"
                 to="/"
@@ -76,7 +76,7 @@ function NavigationBar(props) {
                 {props.home}
               </Nav.Link>
               <Nav.Link
-                eventKey="3"
+                eventKey="4"
                 as={Link}
                 className="me-4 navBarLinks"
                 to="/contact"
@@ -86,7 +86,7 @@ function NavigationBar(props) {
             </Nav>
             <Nav>
               <Nav.Link
-                eventKey="4"
+                eventKey="5"
                 as={Link}
                 className="navBarLinks navBarMarginRight"
                 to="/login"

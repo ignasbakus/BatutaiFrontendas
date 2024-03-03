@@ -1,9 +1,10 @@
 import Carousel from "react-bootstrap/Carousel";
 import "../Styles/CarouselHomePage.css";
+import { Container } from "react-bootstrap";
 
 function CarouselHomePage(props) {
   return (
-    <>
+    <Container>
       <Carousel data-bs-theme="dark">
         <Carousel.Item className="carouselItem" /*interval={5000}*/>
           <img className="w-50" src={require("../images/Skraiduolis1.jpg")} />
@@ -21,7 +22,7 @@ function CarouselHomePage(props) {
           />
         </Carousel.Item>
       </Carousel>
-    </>
+    </Container>
   );
 }
 

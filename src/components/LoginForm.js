@@ -3,7 +3,7 @@ import { Form, Row, Col, Button, Container } from "react-bootstrap";
 
 function LoginForm(props) {
   return (
-    <Container>
+    <>
       <form className="mt-5">
         <Row className="justify-content-center">
           <Col
@@ -16,11 +16,7 @@ function LoginForm(props) {
           >
             <Form.Group className="mt-3" controlId="formBasicEmail">
               <Form.Label>Elektroninis paštas</Form.Label>
-              <Form.Control
-                size="sm"
-                type="email"
-                placeholder="Elektroninis paštas"
-              />
+              <Form.Control type="email" placeholder="Elektroninis paštas" />
             </Form.Group>
           </Col>
         </Row>
@@ -35,11 +31,7 @@ function LoginForm(props) {
           >
             <Form.Group className="mt-3" controlId="formBasicPassword">
               <Form.Label>Slaptažodis</Form.Label>
-              <Form.Control
-                size="sm"
-                type="password"
-                placeholder="Slaptažodis"
-              />
+              <Form.Control type="password" placeholder="Slaptažodis" />
             </Form.Group>
           </Col>
         </Row>
@@ -63,7 +55,7 @@ function LoginForm(props) {
           </Col>
         </Row>
       </form>
-    </Container>
+    </>
   );
 }
 

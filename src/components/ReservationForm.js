@@ -10,13 +10,13 @@ function ReservationForm(props) {
         <Col sm={12} md={3} lg={3} xl={3} xxl={3}>
           <Form.Group className="mt-3" controlId="formBasicName">
             <Form.Label>Vardas</Form.Label>
-            <Form.Control size="sm" type="text" placeholder="Vardas" />
+            <Form.Control type="text" placeholder="Vardas" />
           </Form.Group>
         </Col>
         <Col sm={12} md={3} lg={3} xl={3} xxl={3}>
           <Form.Group className="mt-3" controlId="formBasicLastName">
             <Form.Label>Pavardė</Form.Label>
-            <Form.Control size="sm" type="text" placeholder="Pavardė" />
+            <Form.Control type="text" placeholder="Pavardė" />
           </Form.Group>
         </Col>
       </Row>
@@ -24,13 +24,13 @@ function ReservationForm(props) {
         <Col sm={12} md={3} lg={3} xl={3} xxl={3}>
           <Form.Group className="mt-3" controlId="formBasicLastName">
             <Form.Label>Adresas</Form.Label>
-            <Form.Control size="sm" type="text" placeholder="Adresas" />
+            <Form.Control type="text" placeholder="Adresas" />
           </Form.Group>
         </Col>
         <Col sm={12} md={3} lg={3} xl={3} xxl={3}>
           <Form.Group className="mt-3">
             <Form.Label>Miestas</Form.Label>
-            <Form.Select size="sm" aria-label="Default select example">
+            <Form.Select aria-label="Default select example">
               <option value="1">Kaunas</option>
               <option value="2">Vilnius</option>
               <option value="3">Prienai</option>
@@ -42,7 +42,7 @@ function ReservationForm(props) {
         <Col sm={12} md={6} lg={6} xl={6} xxl={6}>
           <Form.Group className="mt-3" controlId="formBasicPhoneNumber">
             <Form.Label>Tel. Numeris</Form.Label>
-            <InputGroup size="sm">
+            <InputGroup>
               <InputGroup.Text id="basic-addon3">+370</InputGroup.Text>
               <Form.Control
                 id="inputNumber"
@@ -57,11 +57,7 @@ function ReservationForm(props) {
         <Col sm={12} md={6} lg={6} xl={6} xxl={6}>
           <Form.Group className="mt-3" controlId="formBasicEmail">
             <Form.Label>Elektroninis paštas</Form.Label>
-            <Form.Control
-              size="sm"
-              type="email"
-              placeholder="Elektroninis paštas"
-            />
+            <Form.Control type="email" placeholder="Elektroninis paštas" />
           </Form.Group>
         </Col>
       </Row>
